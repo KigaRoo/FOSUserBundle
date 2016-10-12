@@ -11,6 +11,8 @@
 
 namespace FOS\UserBundle\Model;
 
+use Kgr\MainBundle\Entity\CompanyGroup;
+use Symfony\Component\Security\Core\Role\RoleInterface;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\Common\Collections\ArrayCollection;
 
@@ -541,7 +543,7 @@ abstract class User implements UserInterface, GroupableInterface
     /**
      * Gets the groups granted to the user.
      *
-     * @return Collection
+     * @return Collection|CompanyGroup[]
      */
     public function getGroups()
     {

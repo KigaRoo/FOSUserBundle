@@ -61,7 +61,10 @@ class ResettingController extends ContainerAware
         }
 
         $this->container->get('session')->set(static::SESSION_EMAIL, $this->getObfuscatedEmail($user));
-        $this->container->get('fos_user.mailer')->sendResettingEmailMessage($user);
+
+        $this->container->get('kgr_mailer')
+            ->sendResettingEmailMessage($user);
+
         $user->setPasswordRequestedAt(new \DateTime());
         $this->container->get('fos_user.user_manager')->updateUser($user);
 

@@ -65,9 +65,11 @@ class RegistrationController extends ContainerAware
         $this->container->get('session')->remove('fos_user_send_confirmation_email/email');
         $user = $this->container->get('fos_user.user_manager')->findUserByEmail($email);
 
+        /*
         if (null === $user) {
             throw new NotFoundHttpException(sprintf('The user with email "%s" does not exist', $email));
         }
+        */
 
         return $this->container->get('templating')->renderResponse('FOSUserBundle:Registration:checkEmail.html.'.$this->getEngine(), array(
             'user' => $user,
@@ -133,3 +135,4 @@ class RegistrationController extends ContainerAware
         return $this->container->getParameter('fos_user.template.engine');
     }
 }
+

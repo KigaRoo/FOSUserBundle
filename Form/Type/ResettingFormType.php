@@ -18,7 +18,7 @@ class ResettingFormType extends AbstractType
 {
     public function buildForm(FormBuilder $builder, array $options)
     {
-        $builder->add('new', 'repeated', array('type' => 'password'));
+        $builder->add('new', 'repeated', array('type' => 'password','options' => array('attr' => array('autocomplete' => 'off')) ));
     }
 
     public function getDefaultOptions(array $options)
@@ -31,3 +31,4 @@ class ResettingFormType extends AbstractType
         return 'fos_user_resetting';
     }
 }
+

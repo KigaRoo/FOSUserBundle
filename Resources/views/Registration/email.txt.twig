@@ -1,3 +1,4 @@
 {% autoescape false %}
-{{ 'registration.email'|trans({'%username%': user.username, '%confirmationUrl%': confirmationUrl}, 'FOSUserBundle') }}
+{{ 'registration.email'|trans({'%email%': user.email,'%username%': user.username, '%confirmationUrl%': confirmationUrl, '%firstname%' : user.firstname, '%lastname%' : user.lastname}, 'FOSUserBundle') }}
 {% endautoescape %}
+

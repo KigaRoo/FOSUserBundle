@@ -805,4 +805,3 @@ abstract class User implements UserInterface, GroupableInterface
         return base_convert(bin2hex($bytes), 16, 36);
     }
 }
-

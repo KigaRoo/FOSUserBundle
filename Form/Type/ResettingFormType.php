@@ -31,4 +31,3 @@ class ResettingFormType extends AbstractType
         return 'fos_user_resetting';
     }
 }
-

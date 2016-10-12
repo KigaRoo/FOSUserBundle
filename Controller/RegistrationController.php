@@ -135,4 +135,3 @@ class RegistrationController extends ContainerAware
         return $this->container->getParameter('fos_user.template.engine');
     }
 }
-

@@ -1,5 +1,5 @@
 {
-    "name": "friendsofsymfony/user-bundle",
+    "name": "kigaroo/user-bundle",
     "type": "symfony-bundle",
     "description": "Symfony FOSUserBundle",
     "keywords": [

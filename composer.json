@@ -1,8 +1,8 @@
 {
-    "name": "friendsofsymfony/user-bundle",
+    "name": "kigaroo/user-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony FOSUserBundle",
-    "keywords": ["User management"],
+    "description": "Form of Symfony FOSUserBundle",
+    "keywords": ["User management kigarooo"],
     "homepage": "http://friendsofsymfony.github.com",
     "license": "MIT",
     "authors": [

@@ -115,7 +115,7 @@ class RegistrationController extends Controller
         $user = $this->userManager->findUserByEmail($email);
 
         if (null === $user) {
-            return new RedirectResponse($this->container->get('router')->generate('fos_user_security_login'));
+//            return new RedirectResponse($this->container->get('router')->generate('fos_user_security_login'));
         }
 
         return $this->render('@FOSUser/Registration/check_email.html.twig', array(

@@ -11,7 +11,7 @@ group:
         deleted: 'Die Gruppe wurde gelöscht.'
 security:
     login:
-        username: Benutzername
+        username: 'Benutzername/E-Mail-Adresse:'
         password: Passwort
         remember_me: 'An mich erinnern'
         submit: Anmelden
@@ -28,29 +28,39 @@ change_password:
     flash:
         success: 'Das Passwort wurde geändert.'
 registration:
-    check_email: 'Eine E-Mail wurde an %email% gesendet. Sie enthält einen Link, den Sie anklicken müssen, um Ihr Benutzerkonto zu bestätigen.'
-    confirmed: 'Glückwunsch %username%, Ihr Benutzerkonto ist jetzt bestätigt.'
+    check_email: 'Eine E-Mail wurde an %email% gesendet. Diese E-Mail enthält einen Aktivierungs-Link, den Sie anklicken müssen um die Registrierung abzuschließen.'
+    confirmed: 'Herzlichen Glückwunsch %username%, ihr neuer KigaRoo-Account ist jetzt aktiviert!'
     back: 'Zurück zur ursprünglichen Seite.'
-    submit: Registrieren
+    submit: KigaRoo - Registrierung
     flash:
         user_created: 'Der Benutzer wurde erfolgreich erstellt.'
-    email:
-        subject: 'Willkommen %username%!'
-        message: |
-            Hallo %username%!
+    email: |
+        Ihr neuer Zugang zu KigaRoo.de
+        Herzlichen Glückwunsch, Sie haben sich erfolgreich bei KigaRoo registriert und sind nur noch einen Klick von Ihrem neuen Account entfernt!
 
-            Besuchen Sie bitte folgende Seite, um Ihr Benutzerkonto zu bestätigen: %confirmationUrl%
+        Bitte klicken Sie auf den folgenden Link um Ihr Benutzerkonto zu aktivieren. Unmittelbar danach steht Ihnen Ihr Zugang mit allen Funktionen kostenlos für volle vier Wochen zur Verfügung.
 
-            Mit besten Grüßen,
-            das Team.
+        %confirmationUrl%
 
+        Ihr Benutzername lautet: %email%
+
+        Bitte zögern Sie nicht, uns während Ihres vierwöchigen Testzeitraums jederzeit zu kontaktieren wenn Sie Fragen haben.
+
+        Wir wünschen Ihnen viel Freude bei der Benutzung von KigaRoo und sind über Anregungen, Lob und Kritik per Email unter feedback@kigaroo.de jederzeit dankbar.
+
+        Wenn Sie KigaRoo im Anschluss an den kostenlosen Testmonat nicht weiter nutzen möchten, reicht eine kurze Mitteilung per Fax oder Brief während Ihres kostenloses Testmonats und wir deaktivieren Ihren Zugang zu KigaRoo umgehend. Aber keine Sorge, auch danach können Sie den Vertrag mit KigaRoo ohne lange Kündigungsfristen jeden Monat kündigen.
+
+        Wir freuen uns, wenn wir Sie unterstützen können!
+
+        Ihr Team von KigaRoo
+
+        DIES IST EINE AUTOMATISCH GENERIERTE SYSTEM-EMAIL, BITTE ANTWORTEN SIE DAHER NICHT AUF DIESE EMAIL. Per Email erreichen Sie uns unter kigaroo@kigaroo.de.
+
+        Für technischen Support erreichen Sie unser freundliches Team per Email unter support@kigaroo.de oder telefonisch von Mo-Fr jeweils zwischen 8.00 Uhr und 16.00 Uhr unter +49 (0)40 3030 66 999.
+
+        Für alle anderen Fragen erreichen Sie uns unter den auf www.kigaroo.de angegebenen Kontaktdaten.
 resetting:
-    check_email: |
-        Eine E-Mail wurde verschickt. Sie beinhaltet einen Link zum Zurücksetzen des Passwortes.
-        Hinweis: Ein neues Passwort kann nur alle %tokenLifetime% Stunden beantragt werden.
-
-        Eventuell wurde diese E-Mail als Spam markiert, wenn sie nicht angekommen ist.
-
+    check_email: Eine E-Mail wurde an %email% gesendet. Sie enthält einen Link, den Sie anklicken müssen, um Ihr Passwort zurückzusetzen.
     request:
         username: 'Benutzername oder E-Mail-Adresse'
         submit: 'Passwort zurücksetzen'
@@ -58,27 +68,32 @@ resetting:
         submit: 'Passwort ändern'
     flash:
         success: 'Das Passwort wurde erfolgreich zurückgesetzt.'
-    email:
-        subject: 'Passwort zurücksetzen'
-        message: |
-            Hallo %username%!
+    email: |
+        Sehr geehrte(r) %firstname% %lastname%,
 
-            Besuchen Sie bitte folgende Seite, um Ihr Passwort zurückzusetzen: %confirmationUrl%
+        bitte wählen Sie ein neues persönliches Passwort indem Sie auf den folgenden Link klicken:
 
-            Mit besten Grüßen,
-            das Team.
+        %confirmationUrl%
 
+        Wir wünschen Ihnen viel Freude bei der Benutzung von KigaRoo und freuen uns jederzeit aufrichtig über Anregungen, Lob und Kritik unter feedback@kigaroo.de.
+
+        Mit den besten Grüßen,
+
+        Ihr Team von KigaRoo
+
+        DIES IST EINE AUTOMATISCH GENERIERTE SYSTEM-EMAIL, BITTE ANTWORTEN SIE DAHER NICHT AUF DIESE EMAIL.
+        Sie erreichen uns unter den oben in dieser Email, sowie auf www.kigaroo.de angegebenen Kontaktdaten.
 layout:
     logout: Abmelden
     login: Anmelden
     register: Registrieren
     logged_in_as: 'Angemeldet als %username%'
 form:
-    group_name: Gruppenname
+    group_name: "Gruppenname:"
     username: Benutzername
-    email: E-Mail-Adresse
-    current_password: 'Derzeitiges Passwort'
-    password: Passwort
-    password_confirmation: 'Passwort bestätigen'
-    new_password: 'Neues Passwort'
-    new_password_confirmation: 'Neues Passwort bestätigen'
+    email: "E-Mail-Adresse:"
+    current_password: 'Derzeitiges Passwort:'
+    password: 'Passwort:'
+    password_confirmation: 'Bestätigung:'
+    new_password: 'Neues Passwort:'
+    new_password_confirmation: 'Bestätigung:'
